@@ -22,7 +22,7 @@
       gap: 4px
 
   &__logo
-    width 70px
+    width 56px
     height: auto
     +above($breakpoints.sm)
       width 80px
@@ -32,16 +32,17 @@
       width 98px
 
   &__connection
+    display: flex
+    align-items: center
+    gap: 6px
     +above($breakpoints.sm)
-      display: flex
-      align-items: center
       gap: 15px;
     +above($breakpoints.md)
       gap: 20px;
     +above($breakpoints.xxl)
       gap: 22px
 
-  &__call-me
-    display: none
-    +above($breakpoints.sm)
-      display: flex
+  // &__call-me
+  //   display: none
+  //   +above($breakpoints.sm)
+  //     display: flex
