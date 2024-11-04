@@ -1,0 +1,26 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__icon(src="images/city-section-icon.png" loading="lazy" width="128" height="132" alt="icon")
+      h1.city-section__title.font-w-bold.font-s-63
+        | Начните 
+        br.no-br
+        span.font-w-semi-bold-i.color-yellow свой бизнес 
+        br
+        | прямо сейчас
+      .city-section__sub-title.font-s-26
+        | Проверьте, 
+        span.font-w-bold.color-yellow свободен ли ваш город 
+        br
+        | для работы по франшизе
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") проверить
+        .city-section__agree-wrapper
+          img.agree__checkbox(src="images/checkbox.svg" loading="lazy" width="14" height="14" alt="checkbox")
+          .font-w-m-regular.font-s-10
+            | Я принимаю условия 
+            a(href="#" data-remodal-target="privacy").agree__privacy Политики конфиденциальности
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1554" height="1212" alt="image")

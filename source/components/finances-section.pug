@@ -1,0 +1,42 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__icon-1(src="images/finances-section-icon-1.png" loading="lazy" width="276" height="292" alt="icon")
+      img.finances-section__icon-2(src="images/finances-section-icon-2.png" loading="lazy" width="128" height="132" alt="icon")
+      img.finances-section__icon-3(src="images/finances-section-icon-3.png" loading="lazy" width="130" height="138" alt="icon")
+      img.finances-section__icon-4(src="images/finances-section-icon-4.png" loading="lazy" width="128" height="132" alt="icon")
+      h2.finances-section__title.font-w-bold.font-s-45
+        | Франшиза «ЦВЕТ АПРЕЛЯ» 
+        span.font-w-bold-i.color-orange в цифрах
+      .finances-section__sub-title.font-s-22
+        | Сотрудничая с нами вы можете рассчитывать на:
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-34 14 месяцев
+            .font-s-18 срок окупаемости <br> вашего бизнеса
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-34 от 420 тыс. рублей
+            .font-s-18 первоначальные <br> инвестиции
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-34 от 26 дней
+            .font-s-18 требуется <br> на открытие бизнеса
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-34 от 63,3%
+            .font-s-18 рентабельность <br> по чистой прибыли
+        .bullet-pagination
+      .finances-section__bottom
+        .font-s-26
+          | Ознакомьтесь детально с финансовыми 
+          br.no-br
+          | расчётами 
+          span.color-yellow.font-w-bold вашего будущего бизнеса
+        .finances-section__bottom-text.font-s-18 Скачайте финансовую модель «ЦВЕТ АПРЕЛЯ»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="911" height="912" alt="image")

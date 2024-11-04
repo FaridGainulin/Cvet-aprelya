@@ -1,0 +1,181 @@
+.reasons-section
+  // background-image: url('../images/reasons-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0
+    +above($breakpoints.md)
+      padding 80px 0
+    +above($breakpoints.xxl)
+      padding 114px 0
+
+  &__icon
+    position: absolute
+    width: 70px;
+    height: auto;
+    top: 48px;
+    left: -30px;
+    +above($breakpoints.sm)
+      width: 140px;
+      top: 78px;
+      left: -84px;
+    +above($breakpoints.md)
+      width: 161px;
+      top: 144px;
+      left: -97px;
+    +above($breakpoints.xxl)
+      width 204px
+      top: 208px
+      left: -124px
+
+  &__title
+    text-align: center
+    padding 0 0 15px 0
+    line-height 124% !important
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 50px 0
+    +above($breakpoints.xxl)
+      padding 0 0 70px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    height: 178px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    background-color #F7FFE9
+    border-radius: 10px
+    padding 15px 10px
+    +above($breakpoints.sm)
+      width 174px !important
+      height: 228px
+      border-radius: 15px
+      padding 15px 5px
+    +above($breakpoints.md)
+      width: 228px !important;
+      height: 273px;
+      border-radius: 20px;
+      padding: 20px 10px;
+    +above($breakpoints.xxl)
+      width 280px !important
+      height: 305px
+      padding 20px 10px
+
+  &__card-icon
+    width 20px
+    height: 20px
+    +above($breakpoints.sm)
+      width 24px
+      height: 24px
+    +above($breakpoints.md)
+      width 30px
+      height: 30px
+    +above($breakpoints.xxl)
+      width 32px
+      height: 32px
+
+  &__card-title
+    padding 10px 0
+    +above($breakpoints.sm)
+      padding 16px 0 14px
+    +above($breakpoints.md)
+      padding 18px 0 15px
+    +above($breakpoints.xxl)
+      padding 20px 0 16px
+
+  &__bottom
+    position relative
+    width 100%
+    color: #fff
+    background-color #457345
+    border-radius: 10px
+    padding: 15px 10px 190px 10px;
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      border-radius: 15px
+      padding 25px 10px 25px 12px
+      margin-top 30px
+    +above($breakpoints.md)
+      border-radius: 20px
+      padding 35px 10px 35px 30px
+      margin-top 70px
+    +above($breakpoints.xxl)
+      height: 297px
+      padding 44px 10px 44px 62px
+      margin-top 90px
+
+  &__bottom-img
+    position: absolute
+    width: 280px;
+    height: auto;
+    bottom: 6px;
+    right: 14px;
+    +above($breakpoints.sm)
+      width: 300px;
+      bottom: 12px;
+      right: 10px;
+    +above($breakpoints.md)
+      width: 428px;
+      bottom: 18px;
+      right: 15px;
+    +above($breakpoints.xxl)
+      width 515px
+      bottom: 18px
+      right: 20px
+
+  &__bottom-text
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 12px 0 15px
+    +above($breakpoints.md)
+      padding 14px 0 18px
+    +above($breakpoints.xxl)
+      padding 16px 0 20px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 7px
+    +above($breakpoints.xxl)
+      gap: 8px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 165px !important
+      +above($breakpoints.md)
+        width 200px !important
+      +above($breakpoints.xxl)
+        width 240px !important
+
+  &__agree-wrapper
+    display: flex
+    align-items: center
+    justify-content center
+    margin-top 10px
+    +above($breakpoints.sm)
+      justify-content start
+      margin-top 16px

@@ -1,0 +1,89 @@
+section.reasons-section
+  .wrapper
+    .reasons-section__container
+      img.reasons-section__icon(src="images/reasons-section-icon.png" loading="lazy" width="408" height="614" alt="icon")
+      h2.reasons-section__title.font-w-bold.font-s-45
+        span.font-w-bold-i.color-orange 4 причины открыть 
+        | свою 
+        br.no-br
+        | студию «ЦВЕТ АПРЕЛЯ»
+      .swiper-bullet
+        .reasons-section__cards.swiper-wrapper
+          .reasons-section__card.swiper-slide
+            img.reasons-section__card-icon(src="images/reasons-section-card-icon-1.svg" loading="lazy" width="32" height="32" alt="icon")
+            .reasons-section__card-title.font-w-bold.font-s-22.text-up Спрос
+            .font-s-16
+              | Раннее развитие детей стало 
+              br.no-br-xxl
+              | стандартом. Практически 
+              br.no-br-xxl
+              | каждый родитель 
+              br.no-br-xxl
+              | задумывается о том, 
+              br.no-br-xxl
+              | чтобы подготовить ребёнка 
+              br.no-br-xxl
+              | к детскому саду. 
+              br.no-br-xxl
+              | Это гарантирует высокий спрос 
+              br.no-br-xxl
+              | на услуги студий раннего 
+              br.no-br-xxl
+              | развития.
+          .reasons-section__card.swiper-slide
+            img.reasons-section__card-icon(src="images/reasons-section-card-icon-2.svg" loading="lazy" width="32" height="32" alt="icon")
+            .reasons-section__card-title.font-w-bold.font-s-22.text-up инвестиции
+            .font-s-16
+              | Для открытия студии 
+              br.no-br-md
+              | не требуется больших 
+              br.no-br-md
+              | инвестиций, что делает 
+              br.no-br-md
+              | этот бизнес очень 
+              br.no-br-md
+              | доступным для 
+              br.no-br-md
+              | большинства людей.
+          .reasons-section__card.swiper-slide
+            img.reasons-section__card-icon(src="images/reasons-section-card-icon-3.svg" loading="lazy" width="32" height="32" alt="icon")
+            .reasons-section__card-title.font-w-bold.font-s-22.text-up рентабельность
+            .font-s-16
+              | Оказание услуг, как 
+              br.no-br-md
+              | правило, сопровождается 
+              br.no-br-md
+              | высокой рентабельностью. 
+              br.no-br-md
+              | В нашей бизнес-модели 
+              br.no-br-md
+              | она превышает 60%.
+          .reasons-section__card.swiper-slide
+            img.reasons-section__card-icon(src="images/reasons-section-card-icon-4.svg" loading="lazy" width="32" height="32" alt="icon")
+            .reasons-section__card-title.font-w-bold.font-s-22.text-up самореализация
+            .font-s-16
+              | Вы будете заниматься по-
+              br.no-br-md
+              | настоящему полезным делом, 
+              br.no-br-md
+              | которое стабильно будет 
+              br.no-br-md
+              | приносить вам прибыль и 
+              br.no-br-md
+              | удовлетворение.
+        .bullet-pagination
+      .reasons-section__bottom
+        img.reasons-section__bottom-img(src="images/reasons-section-bottom-img.png" loading="lazy" width="1030" height="628" alt="image")
+        .font-s-26
+          | Узнайте о других преимуществах 
+          br.no-br
+          | бизнеса 
+          span.color-yellow.font-w-bold по франшизе «ЦВЕТ АПРЕЛЯ»
+        .reasons-section__bottom-text.font-s-18 Скачайте подробную презентацию
+        form.reasons-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") скачать презентацию
+        .reasons-section__agree-wrapper
+          include ../components/agree.pug

@@ -1,0 +1,46 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      img.main-section__pentagon-green(src="images/pentagon-green-sm-icon.png" loading="lazy" width="128" height="132" alt="icon")
+      img.main-section__pentagon-orange(src="images/pentagon-orange-sm-icon.png" loading="lazy" width="102" height="105" alt="icon")
+      img.main-section__hexagon-orange(src="images/hexagon-orange-md-icon.png" loading="lazy" width="183" height="186" alt="icon")
+      img.main-section__arrow-icon(src="images/main-section-arrow-icon.png" loading="lazy" width="319" height="93" alt="icon")
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-63
+        | Поможем 
+        br.no-br
+        | вам открыть свой 
+        br.no-br
+        | центр 
+        span.font-w-semi-bold-i.color-orange
+          | раннего 
+          br.no-br
+          | развития 
+        | детей
+      .main-section__sub-title.font-s-34
+        | с минимальными инвестициями
+      .main-section__text.font-s-28
+        | Получайте 
+        span.font-w-semi-bold-i.color-orange стабильную прибыль, 
+        br
+        | занимаясь любимым и значимым делом
+      .main-section__bottom
+        .font-s-18
+          | Получите подробный 
+          br.no-br
+          | план открытия
+        button.btn.main-section__btn(data-remodal-target="modal-form-plan") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1846" height="1428" alt="image")
+  .main-section__card-wrapper
+    .swiper-bullet
+      .main-section__cards.swiper-wrapper
+        .main-section__card.swiper-slide
+          img.main-section__card-icon(src="images/main-section-card-icon-1.svg" loading="lazy" width="22" height="22" alt="icon")
+          .font-s-18 Быстрый старт
+        .main-section__card.swiper-slide
+          img.main-section__card-icon(src="images/main-section-card-icon-2.svg" loading="lazy" width="22" height="22" alt="icon")
+          .font-s-18 Минимальные вложения
+        .main-section__card.swiper-slide
+          img.main-section__card-icon(src="images/main-section-card-icon-3.svg" loading="lazy" width="22" height="22" alt="icon")
+          .font-s-18 Большая маржинальность
+      .bullet-pagination

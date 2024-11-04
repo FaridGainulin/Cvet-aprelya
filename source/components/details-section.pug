@@ -1,0 +1,54 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      img.details-section__icon-1(src="images/details-section-icon-1.png" loading="lazy" width="653" height="721" alt="icon")
+      img.details-section__icon-2(src="images/details-section-icon-2.png" loading="lazy" width="128" height="132" alt="icon")
+      img.details-section__icon-3(src="images/details-section-icon-3.png" loading="lazy" width="182" height="187" alt="icon")
+      img.details-section__icon-4(src="images/details-section-icon-4.png" loading="lazy" width="128" height="132" alt="icon")
+      h2.details-section__title.font-w-bold.font-s-45
+        | Почувствуйте себя 
+        span.font-w-bold-i.color-orange владельцем 
+        br.no-br
+        | детской студии развития
+      .details-section__sub-title.font-s-22
+        | Запишитесь на тест-драйв франшизы и вы узнаете:
+      .details-section__box
+        .swiper-bullet
+          .details-section__cards.swiper-wrapper
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon-1.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как вести документооборот
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon-2.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как организовать пространство 
+                br.no-br
+                | студии
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon-2.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как искать воспитанников
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon-3.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как избежать ошибок на старте
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon-1.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как и из чего будет 
+                br.no-br
+                | формироваться ваша прибыль
+          .bullet-pagination
+      .details-section__bottom
+        .font-s-26
+          | Запишитесь на 
+          span.font-w-bold.color-yellow тест-драйв
+        form.details-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") записаться
+        .details-section__agree-wrapper
+          include ../components/agree.pug
+      img.details-section__img(src="images/details-section-img.jpg" loading="lazy" width="760" height="524" alt="image")

@@ -1,0 +1,52 @@
+section.start-section
+  .wrapper
+    .start-section__container
+      img.start-section__icon-1(src="images/start-section-icon-1.png" loading="lazy" width="482" height="482" alt="icon")
+      img.start-section__icon-2(src="images/start-section-icon-2.png" loading="lazy" width="257" height="257" alt="icon")
+      h2.start-section__title.font-w-bold.font-s-45
+        | Откройте собственный бизнес 
+        span.font-w-bold-i.color-orange за 26 дней
+      .start-section__sub-title.font-s-22 Команда «ЦВЕТ АПРЕЛЯ» поддержит вас на всех этапах
+      .swiper-bullet
+        .start-section__cards.swiper-wrapper
+          .start-section__card.swiper-slide
+            img.start-section__card-icon(src="images/start-section-card-icon-1.svg" loading="lazy" width="70" height="70" alt="icon")
+            .font-s-18
+              | Предоставим онлайн 
+              br
+              | обучение
+          .start-section__card.swiper-slide
+            img.start-section__card-icon(src="images/start-section-card-icon-2.svg" loading="lazy" width="70" height="70" alt="icon")
+            .font-s-18
+              | Проведем запуск бизнеса 
+              br
+              | дистанционно
+          .start-section__card.swiper-slide
+            img.start-section__card-icon(src="images/start-section-card-icon-3.svg" loading="lazy" width="70" height="70" alt="icon")
+            .font-s-18
+              | Объясним, как получить 
+              br
+              | сертификат Монтессори-
+              br
+              | педагога
+          .start-section__card.swiper-slide
+            img.start-section__card-icon(src="images/start-section-card-icon-4.svg" loading="lazy" width="70" height="70" alt="icon")
+            .font-s-18
+              | Дадим любые 
+              br
+              | консультации, касающиеся
+              br
+              | ведения бизнеса
+        .bullet-pagination
+      .start-section__bottom
+        .font-s-26
+          | Получите 
+          span.font-w-bold.color-yellow подробный план 
+          | по открытию «ЦВЕТ АПРЕЛЯ»
+        form.start-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Получить план
+        .start-section__agree-wrapper
+          include ../components/agree.pug
